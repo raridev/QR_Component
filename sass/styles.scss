@@ -1,0 +1,90 @@
+//Colours//
+
+/*- Mobile: 375px
+- Desktop: 1440px
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Press Start 2P', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;100&display=swap');
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #D5E1EF;
+}
+
+.card {
+    width: 290px;
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    background-color: $White;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.card-image{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $Dark-blue;
+    
+}
+
+.card-paragraph{
+    text-align: center;
+    font-weight: 100;
+    font-size: .93rem;
+    color: $Grayish-blue;
+}
+
+@media only screen and(max-width:375px){
+    .container{
+       
+        background-color: #D5E1EF;
+        width: 100%;
+
+    }
+
+    .card {
+        width:90vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: -130px;
+        background-color: $White;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+
+}
